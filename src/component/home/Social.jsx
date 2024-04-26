@@ -7,6 +7,7 @@ const Social = () => {
         href="https://www.instagram.com/"
         className="home_social-icon"
         target="_blank"
+        rel="noopener noreferrer"
       >
        <i class="uil uil-instagram"></i>
       </a>
@@ -14,7 +15,8 @@ const Social = () => {
       <a
         href="https://dribbble.com/"
         className="home_social-icon"
-        target="_blank"
+        target="_blank" 
+        rel="noopener noreferrer"
       >
         <i class="uil uil-dribbble"></i>
       </a>
@@ -23,6 +25,7 @@ const Social = () => {
         href="https://github.com/"
         className="home_social-icon"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <i class="uil uil-github-alt"></i>
       </a>
