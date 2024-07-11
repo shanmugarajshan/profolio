@@ -42,6 +42,13 @@ function  Header() {
                             </a>
                         </li>
 
+                        <li className="nav_item">
+                            <a href="#contact" className="nav_link">
+                                <i className="uil uil-briefcase-alt nav_icon"></i>
+                                Contact
+                            </a>
+                        </li>
+
                     </ul>
 
                     <i class="uil uil-times nav_close"  onClick={()=> showMenu(!Toggle)}></i>

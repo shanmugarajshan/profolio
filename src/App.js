@@ -5,6 +5,7 @@ import Header from './component/header/Header';
 import About from './component/about/About';
 import Skills from './component/skills/Skills';
 import Services from './component/services/Services';
+import Contact from './component/contact/Contact';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Skills />
         <Services />
+        <Contact />
       </main>
     </>
   );
