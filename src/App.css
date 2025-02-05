@@ -14,6 +14,10 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  --hue: 220;
+  --sat: 90%;
+  --primary-color: hsl(var(--hue), var(--sat), 50%);
+  --primary-color-dark: hsl(var(--hue), var(--sat), 40%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -83,9 +87,52 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  position: relative;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s infinite alternate ease-in-out;
   color: var(--text-color);
+  overflow-x: hidden;
 }
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+  }
+  25% {
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee, #ffd3a5);
+  }
+  50% {
+      background: linear-gradient(135deg, #ffdde1, #a1c4fd, #c2e9fb);
+  }
+  75% {
+      background: linear-gradient(135deg, #ff9a9e, #fbc2eb, #a1c4fd);
+  }
+  100% {
+      background: linear-gradient(135deg, #ffdde1, #ff9a9e, #fad0c4);
+  }
+}
+
+/* Wave Effect */
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url('https://svgshare.com/i/vPy.svg');
+  background-size: cover;
+  animation: waveAnimation 6s infinite linear;
+}
+
+/* Wave Motion Animation */
+@keyframes waveAnimation {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50px); }
+  100% { transform: translateX(0); }
+}
+
 
 h1,
 h2,
