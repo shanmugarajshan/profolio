@@ -57,8 +57,9 @@ const Data = () => {
       </h1>
       <h3 className="home_subtitle">Web Developer</h3>
       <p className="home_description">
-           Passionate Front-End Developer with 1 year of experience 
-            specializing in building responsive and user-friendly web applications.
+        Passionate about web development and love to create seamless user
+        experiences. I specialize in React.js and enjoy building modern,
+        interactive web applications.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
@@ -80,7 +81,7 @@ const Data = () => {
           ></path>
         </svg>
       </a>
-     
+
     </div>
   );
 };
